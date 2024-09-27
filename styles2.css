@@ -38,8 +38,6 @@ h1 {
     margin: 10px 0;
 }
 
-
-
 .button {
     display: inline-block;
     padding: 10px 20px;
@@ -52,12 +50,6 @@ h1 {
 
 .button:hover {
     background-color: #ff5722; /* Vibrant color on hover (orange) */
-}
-
-
-
-.button:hover {
-    background-color: #45a049;
 }
 
 section {
@@ -131,4 +123,58 @@ footer {
     width: 100%;
     padding: 20px;
     text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    .project-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .skills ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+
+    .profile-pic {
+        width: 80px;
+        height: 80px;
+    }
+
+    .project {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .button {
+        padding: 8px 16px;
+    }
 }

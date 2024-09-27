@@ -5,8 +5,6 @@
     box-sizing: border-box;
 }
 
-
-
 body {
     font-family: Arial, sans-serif;
     background-image: url('backgroundimage.jpg'); /* Path to your background image */
@@ -19,7 +17,6 @@ body {
     align-items: center;
     height: 100vh;
 }
-
 
 /* Container for all content */
 .container {
@@ -73,25 +70,48 @@ header p {
     background-color: #45a049;
 }
 
-/* Responsiveness */
+/* Responsive Styles */
 @media (max-width: 600px) {
     .container {
         width: 100%;
         padding: 10px;
     }
-}
 
+    .profile-pic {
+        width: 80px;
+        height: 80px;
+    }
 
-@media screen and (max-width: 30em) {
-    .link {
+    header h1 {
+        font-size: 20px;
+    }
 
-        max-width: 90%;
+    header p {
+        font-size: 12px;
+    }
+
+    .links a {
+        font-size: 16px;
+        padding: 8px;
+        max-width: 100%;
     }
 }
 
-@media screen and (max-width: 30em) {
-    .link {
+@media (max-width: 480px) {
+    .container {
+        padding: 8px;
+    }
 
-        max-width: 90%;
+    .profile-pic {
+        width: 60px;
+        height: 60px;
+    }
+
+    header h1 {
+        font-size: 18px;
+    }
+
+    header p {
+        font-size: 11px;
     }
 }
